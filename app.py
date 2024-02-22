@@ -227,7 +227,7 @@ def main():
 
         st.write("Adjust Your Parameter Here:")
         temperature = st.number_input("Temperature", min_value=0.0, max_value=1.0, value=0.5, step=0.01)
-        max_token = st.number_input("Maximum Output Token", min_value=0, value=1000)
+        max_token = st.number_input("Maximum Output Token", min_value=0, value=2000)
         gen_config = genai.types.GenerationConfig(max_output_tokens=max_token, temperature=temperature)
 
     st.divider()
